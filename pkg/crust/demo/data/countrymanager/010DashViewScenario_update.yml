@@ -1,0 +1,42 @@
+---
+ID: demo_country_list_scenario_all
+Name: 全部
+SystemScenario: true
+ViewConfig: demo_country_list
+Data:
+  type: scenario_wrap
+  Name: 全部
+  items:
+    - type: action_wrap
+      name: 操作
+      items:
+        - type: search
+        - type: create
+    - type: table
+      sort:
+        - field: id
+          order: DESC
+      pagination:
+        pageSize: 20
+      fields:
+        - type: field
+          key: id
+          name: ID
+        - type: field
+          key: name
+          name: 国家名称
+        - type: field
+          key: capital
+          name: 首都
+        - type: field
+          key: population
+          name: 人口
+        - type: field
+          key: area
+          name: 面积
+        - type: field
+          key: language
+          name: 语言
+        - type: field
+          key: introduce
+          name: 介绍

@@ -1,0 +1,44 @@
+configfilename = ""
+datadir = "./scratch"
+debug = true
+demo = false
+logfile = ""
+loglevel = "info"
+logstdout = true
+modules = ["ma.applysquare.net/eng/flora-base/pkg/mantle/fumidash",
+    "ma.applysquare.net/eng/flora-base/pkg/projectdata/florabasedatademo",
+    "ma.applysquare.net/wangyanlin/flora-weekends/pkg/crust/demo"
+]
+resourcedir = "./stage/res"
+
+[db]
+  driver = "postgres"
+  expirecleanduration = "720h"
+  expiredeleteduration = "720h"
+  host = "localhost"
+  name = "flora-weekends"
+  password = "postgres"
+  port = "5432"
+  sslca = ""
+  sslcert = ""
+  sslkey = ""
+  sslmode = "disable"
+  statementtimeout = "20s"
+  user = "postgres"
+
+[file]
+  ephemeral_dir = "./stage/scratch"
+  private_store = "local://test"
+  public_store = "local://test_public"
+  public_using_cdn = false
+  region = ""
+
+[server]
+  certificate = ""
+  cookiestorekeypairs = ""
+  defaultlanguage = ""
+  domain = ""
+  interface = ""
+  languages = []
+  port = "8080"
+  privatekey = ""

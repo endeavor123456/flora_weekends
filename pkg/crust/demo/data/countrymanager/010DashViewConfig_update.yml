@@ -1,0 +1,132 @@
+---
+ID: demo_country_list
+Name: 列表视图
+ViewType: list_page_view
+Model: DemoCountry
+Data:
+  type: blank_page
+  items:
+    - type: scenario_page
+      key: scenario_ids
+---
+ID: demo_country_detail
+Name: 详情视图
+ViewType: detail_page_view
+Model: DemoCountry
+Data:
+  type: page
+  key: detail_page
+  items:
+    - type: card
+      name: 国家信息
+      key: card_info
+      items:
+        - type: group
+          key: card_info_group
+          items:
+            - type: line
+              items:
+                - type: field
+                  key: name
+                  name: 国家名称
+                - type: field
+                  key: capital
+                  name: 首都
+                - type: field
+                  key: population
+                  name: 人口
+                - type: field
+                  key: area
+                  name: 面积
+                - type: field
+                  key: language
+                  name: 语言
+                - type: field
+                  key: introduce
+                  name: 介绍
+---
+ID: demo_country_edit
+Name: 编辑视图
+ViewType: edit_page_view
+Model: DemoCountry
+Data:
+  type: page
+  key: edit_page
+  showlanguage:
+    language: false
+  items:
+    - type: card
+      name: 编辑国家信息
+      key: card_info
+      items:
+        - type: group
+          key: card_info_group
+          items:
+            - type: line
+              items:
+                - type: field
+                  key: name
+                  name: 国家名称
+                  renderType: input
+                - type: field
+                  key: capital
+                  name: 首都
+                  renderType: input
+                - type: field
+                  key: population
+                  name: 人口
+                  renderType: input_number
+                - type: field
+                  key: area
+                  name: 面积
+                  renderType: input_number
+                - type: field
+                  key: language
+                  name: 语言
+                  renderType: input
+                - type: field
+                  key: introduce
+                  name: 介绍
+                  renderType: text_area
+---
+ID: demo_country_create
+Name: 创建视图
+ViewType: create_page_view
+Model: DemoCountry
+Data:
+  type: page
+  key: create_page
+  items:
+    - type: card
+      name: 创建用户
+      key: card_info
+      items:
+        - type: group
+          key: card_info_group
+          items:
+            - type: line
+              items:
+                - type: field
+                  key: name
+                  name: 国家名称
+                  renderType: input
+                - type: field
+                  key: capital
+                  name: 首都
+                  renderType: input
+                - type: field
+                  key: population
+                  name: 人口
+                  renderType: input_number
+                - type: field
+                  key: area
+                  name: 面积
+                  renderType: input_number
+                - type: field
+                  key: language
+                  name: 语言
+                  renderType: input
+                - type: field
+                  key: introduce
+                  name: 介绍
+                  renderType: text_area

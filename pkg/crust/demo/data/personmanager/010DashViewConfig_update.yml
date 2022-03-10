@@ -1,0 +1,132 @@
+---
+ID: demo_person_list
+Name: 列表视图
+ViewType: list_page_view
+Model: DemoPerson
+Data:
+  type: blank_page
+  items:
+    - type: scenario_page
+      key: scenario_ids
+---
+ID: demo_person_detail
+Name: 详情视图
+ViewType: detail_page_view
+Model: DemoPerson
+Data:
+  type: page
+  key: detail_page
+  items:
+    - type: card
+      name: 用户信息
+      key: card_info
+      items:
+        - type: group
+          key: card_info_group
+          items:
+            - type: line
+              items:
+                - type: field
+                  key: name
+                  name: 姓名
+                - type: field
+                  key: age
+                  name: 年龄
+                - type: field
+                  key: address
+                  name: 地址
+                - type: field
+                  key: height
+                  name: 身高
+                - type: field
+                  key: weight
+                  name: 体重
+                - type: field
+                  key: sex
+                  name: 性别
+---
+ID: demo_person_edit
+Name: 编辑视图
+ViewType: edit_page_view
+Model: DemoPerson
+Data:
+  type: page
+  key: edit_page
+  showlanguage:
+    language: false
+  items:
+    - type: card
+      name: 编辑用户
+      key: card_info
+      items:
+        - type: group
+          key: card_info_group
+          items:
+            - type: line
+              items:
+                - type: field
+                  key: name
+                  name: 姓名
+                  renderType: input
+                - type: field
+                  key: age
+                  name: 年龄
+                  renderType: input_number
+                - type: field
+                  key: address
+                  name: 地址
+                  renderType: input
+                - type: field
+                  key: height
+                  name: 身高
+                  renderType: input_number
+                - type: field
+                  key: weight
+                  name: 体重
+                  renderType: input_number
+                - type: field
+                  key: sex
+                  name: 性别
+                  renderType: input
+---
+ID: demo_person_create
+Name: 创建视图
+ViewType: create_page_view
+Model: DemoPerson
+Data:
+  type: page
+  key: create_page
+  items:
+    - type: card
+      name: 创建用户
+      key: card_info
+      items:
+        - type: group
+          key: card_info_group
+          items:
+            - type: line
+              items:
+                - type: field
+                  key: name
+                  name: 姓名
+                  renderType: input
+                - type: field
+                  key: age
+                  name: 年龄
+                  renderType: input_number
+                - type: field
+                  key: address
+                  name: 地址
+                  renderType: input
+                - type: field
+                  key: height
+                  name: 身高
+                  renderType: input_number
+                - type: field
+                  key: weight
+                  name: 体重
+                  renderType: input_number
+                - type: field
+                  key: sex
+                  name: 性别
+                  renderType: input

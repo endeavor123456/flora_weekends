@@ -1,0 +1,8 @@
+
+modules = [
+    "ma.applysquare.net/wangyanlin/flora-weekends/pkg/crust/demo",
+]
+
+go_mod_versions = [
+    "ma.applysquare.net/eng/flora-base@v0.7"
+]

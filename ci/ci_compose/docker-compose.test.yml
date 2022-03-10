@@ -1,0 +1,20 @@
+version: "3"
+services:
+  go:
+    image: ma.applysquare.net:4567/eng/flora/flora-builder-go:1.16-buster
+    volumes:
+      - $FLORA_APP_DIR:/flora/src_stage:cached
+      - $GOPATH_CACHE:/goext:delegated
+      - $GOBUILD_CACHE:/tmp/cache/gobuild:delegated
+    environment:
+      - GOPATH=/goext
+      - GOCACHE=/tmp/cache/gobuild
+    depends_on:
+      - flora_test_postgres
+  flora_test_postgres:
+    image: ma.applysquare.net:4567/eng/docker/flora-postgres:12
+    # Turn off fsync for testing to speed up. Don't turn if off for production.
+    command: postgres -c fsync=off
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres

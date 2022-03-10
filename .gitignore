@@ -1,0 +1,11 @@
+
+.idea
+stage
+node_modules
+dist
+.umi
+.umi-production
+yarn-error.log
+tmp
+*.DS_Store
+*.env.local

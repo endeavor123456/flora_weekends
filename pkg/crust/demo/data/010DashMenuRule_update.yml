@@ -1,0 +1,11 @@
+---
+ID: top_dashmenurule_1
+DashMenu: app_demo_country_manage   
+PermissionList: Users_AutoPermission_CoreAdmin
+Visibility: default_on
+
+---
+ID: top_dashmenurule_2
+DashMenu: app_demo_person_manage   
+PermissionList: Users_AutoPermission_CoreAdmin
+Visibility: default_on

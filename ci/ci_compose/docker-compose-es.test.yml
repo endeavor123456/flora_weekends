@@ -1,0 +1,17 @@
+version: "3"
+services:
+  go:
+    depends_on:
+      - flora_test_postgres
+      - flora_test_elastic
+  flora_test_elastic:
+    image: ma.applysquare.net:4567/eng/docker:elastic_53_2
+    ports:
+      - 9200:9200
+    environment:
+      http.host: 0.0.0.0
+      transport.host: 0.0.0.0
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+      xpack.security.enabled: "false"
+      http.cors.enabled: "true"
+      "http.cors.allow-origin": "*"

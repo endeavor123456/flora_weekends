@@ -1,0 +1,15 @@
+---
+ID: default
+root_redirect_link: /dashboard/home
+description: 演示数据
+logo: /static/fumidash/polarise_logo_light.png
+favicon: /static/fumidash/flora_favicon.ico
+web_title: 网站标题
+
+---
+ID: default
+root_redirect_link: /dashboard/home
+description: 演示数据
+logo: /static/fumidash/polarise_logo_light.png
+favicon: /static/fumidash/flora_favicon.ico
+web_title: 网站标题

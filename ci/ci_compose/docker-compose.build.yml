@@ -1,0 +1,17 @@
+version: "3"
+services:
+  go:
+    image: ma.applysquare.net:4567/eng/flora/flora-builder-go:1.16-buster
+    volumes:
+      - $FLORA_APP_DIR:/flora/src_stage:cached
+      - $GOPATH_CACHE:/goext:delegated
+      - $GOBUILD_CACHE:/tmp/cache/gobuild:delegated
+      - $FLORA_BUILD_DIST:/flora/dist
+    environment:
+      - GOPATH=/goext
+      - GOCACHE=/tmp/cache/gobuild
+  node:
+    image: ma.applysquare.net:4567/eng/flora/flora-builder-node:14
+    volumes:
+      - $FLORA_BUILD_DIST:/flora/dist:delegated
+      - $YARN_CACHE:/tmp/cache/yarn:delegated

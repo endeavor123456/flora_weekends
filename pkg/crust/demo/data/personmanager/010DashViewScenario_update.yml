@@ -1,0 +1,42 @@
+---
+ID: demo_person_list_scenario_all
+Name: 全部
+SystemScenario: true
+ViewConfig: demo_person_list
+Data:
+  type: scenario_wrap
+  Name: 全部
+  items:
+    - type: action_wrap
+      name: 操作
+      items:
+        - type: search
+        - type: create
+    - type: table
+      sort:
+        - field: id
+          order: DESC
+      pagination:
+        pageSize: 20
+      fields:
+        - type: field
+          key: id
+          name: ID
+        - type: field
+          key: name
+          name: 姓名
+        - type: field
+          key: age
+          name: 年龄
+        - type: field
+          key: address
+          name: 地址
+        - type: field
+          key: height
+          name: 身高
+        - type: field
+          key: weight
+          name: 体重
+        - type: field
+          key: sex
+          name: 性别

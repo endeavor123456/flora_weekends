@@ -1,0 +1,189 @@
+{
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "go.formatTool": "goimports",
+  "go.inferGopath": false,
+  "go.lintTool": "golangci-lint",
+  "jsonnet.libPaths": [
+    "./stage/res/datagen"
+  ],
+  "yaml.schemas": {
+    "./stage/schema/Application.schema.json": [
+      "/pkg/**/data/*Application_*.yml",
+      "/pkg/**/data/**/*Application_*.yml"
+    ],
+    "./stage/schema/ApplicationAccessToken.schema.json": [
+      "/pkg/**/data/*ApplicationAccessToken_*.yml",
+      "/pkg/**/data/**/*ApplicationAccessToken_*.yml"
+    ],
+    "./stage/schema/BaseMixin.schema.json": [
+      "/pkg/**/data/*BaseMixin_*.yml",
+      "/pkg/**/data/**/*BaseMixin_*.yml"
+    ],
+    "./stage/schema/CkeditorImage.schema.json": [
+      "/pkg/**/data/*CkeditorImage_*.yml",
+      "/pkg/**/data/**/*CkeditorImage_*.yml"
+    ],
+    "./stage/schema/CommonMixin.schema.json": [
+      "/pkg/**/data/*CommonMixin_*.yml",
+      "/pkg/**/data/**/*CommonMixin_*.yml"
+    ],
+    "./stage/schema/ConfigMixin.schema.json": [
+      "/pkg/**/data/*ConfigMixin_*.yml",
+      "/pkg/**/data/**/*ConfigMixin_*.yml"
+    ],
+    "./stage/schema/CustomEntity.schema.json": [
+      "/pkg/**/data/*CustomEntity_*.yml",
+      "/pkg/**/data/**/*CustomEntity_*.yml"
+    ],
+    "./stage/schema/DashMenu.schema.json": [
+      "/pkg/**/data/*DashMenu_*.yml",
+      "/pkg/**/data/**/*DashMenu_*.yml"
+    ],
+    "./stage/schema/DashMenuRule.schema.json": [
+      "/pkg/**/data/*DashMenuRule_*.yml",
+      "/pkg/**/data/**/*DashMenuRule_*.yml"
+    ],
+    "./stage/schema/DashPage.schema.json": [
+      "/pkg/**/data/*DashPage_*.yml",
+      "/pkg/**/data/**/*DashPage_*.yml"
+    ],
+    "./stage/schema/DashViewConfig.schema.json": [
+      "/pkg/**/data/*DashViewConfig_*.yml",
+      "/pkg/**/data/**/*DashViewConfig_*.yml"
+    ],
+    "./stage/schema/DashViewScenario.schema.json": [
+      "/pkg/**/data/*DashViewScenario_*.yml",
+      "/pkg/**/data/**/*DashViewScenario_*.yml"
+    ],
+    "./stage/schema/DefaultDashViewScenario.schema.json": [
+      "/pkg/**/data/*DefaultDashViewScenario_*.yml",
+      "/pkg/**/data/**/*DefaultDashViewScenario_*.yml"
+    ],
+    "./stage/schema/DemoCountry.schema.json": [
+      "/pkg/**/data/*DemoCountry_*.yml",
+      "/pkg/**/data/**/*DemoCountry_*.yml"
+    ],
+    "./stage/schema/DemoPerson.schema.json": [
+      "/pkg/**/data/*DemoPerson_*.yml",
+      "/pkg/**/data/**/*DemoPerson_*.yml"
+    ],
+    "./stage/schema/FlConfig.schema.json": [
+      "/pkg/**/data/*FlConfig_*.yml",
+      "/pkg/**/data/**/*FlConfig_*.yml"
+    ],
+    "./stage/schema/FloraStudioZoo.schema.json": [
+      "/pkg/**/data/*FloraStudioZoo_*.yml",
+      "/pkg/**/data/**/*FloraStudioZoo_*.yml"
+    ],
+    "./stage/schema/ModelMixin.schema.json": [
+      "/pkg/**/data/*ModelMixin_*.yml",
+      "/pkg/**/data/**/*ModelMixin_*.yml"
+    ],
+    "./stage/schema/OauthClientAccount.schema.json": [
+      "/pkg/**/data/*OauthClientAccount_*.yml",
+      "/pkg/**/data/**/*OauthClientAccount_*.yml"
+    ],
+    "./stage/schema/OauthClientConfig.schema.json": [
+      "/pkg/**/data/*OauthClientConfig_*.yml",
+      "/pkg/**/data/**/*OauthClientConfig_*.yml"
+    ],
+    "./stage/schema/OperationAudit.schema.json": [
+      "/pkg/**/data/*OperationAudit_*.yml",
+      "/pkg/**/data/**/*OperationAudit_*.yml"
+    ],
+    "./stage/schema/OperationAuditRule.schema.json": [
+      "/pkg/**/data/*OperationAuditRule_*.yml",
+      "/pkg/**/data/**/*OperationAuditRule_*.yml"
+    ],
+    "./stage/schema/Org.schema.json": [
+      "/pkg/**/data/*Org_*.yml",
+      "/pkg/**/data/**/*Org_*.yml"
+    ],
+    "./stage/schema/PermissionList.schema.json": [
+      "/pkg/**/data/*PermissionList_*.yml",
+      "/pkg/**/data/**/*PermissionList_*.yml"
+    ],
+    "./stage/schema/PermissionTag.schema.json": [
+      "/pkg/**/data/*PermissionTag_*.yml",
+      "/pkg/**/data/**/*PermissionTag_*.yml"
+    ],
+    "./stage/schema/PivotTables.schema.json": [
+      "/pkg/**/data/*PivotTables_*.yml",
+      "/pkg/**/data/**/*PivotTables_*.yml"
+    ],
+    "./stage/schema/RecordRule.schema.json": [
+      "/pkg/**/data/*RecordRule_*.yml",
+      "/pkg/**/data/**/*RecordRule_*.yml"
+    ],
+    "./stage/schema/Role.schema.json": [
+      "/pkg/**/data/*Role_*.yml",
+      "/pkg/**/data/**/*Role_*.yml"
+    ],
+    "./stage/schema/RoleRule.schema.json": [
+      "/pkg/**/data/*RoleRule_*.yml",
+      "/pkg/**/data/**/*RoleRule_*.yml"
+    ],
+    "./stage/schema/Secret.schema.json": [
+      "/pkg/**/data/*Secret_*.yml",
+      "/pkg/**/data/**/*Secret_*.yml"
+    ],
+    "./stage/schema/SecurityStrategy.schema.json": [
+      "/pkg/**/data/*SecurityStrategy_*.yml",
+      "/pkg/**/data/**/*SecurityStrategy_*.yml"
+    ],
+    "./stage/schema/SelectionOptions.schema.json": [
+      "/pkg/**/data/*SelectionOptions_*.yml",
+      "/pkg/**/data/**/*SelectionOptions_*.yml"
+    ],
+    "./stage/schema/Selections.schema.json": [
+      "/pkg/**/data/*Selections_*.yml",
+      "/pkg/**/data/**/*Selections_*.yml"
+    ],
+    "./stage/schema/TaskChannel.schema.json": [
+      "/pkg/**/data/*TaskChannel_*.yml",
+      "/pkg/**/data/**/*TaskChannel_*.yml"
+    ],
+    "./stage/schema/TaskJob.schema.json": [
+      "/pkg/**/data/*TaskJob_*.yml",
+      "/pkg/**/data/**/*TaskJob_*.yml"
+    ],
+    "./stage/schema/TreeMixIn.schema.json": [
+      "/pkg/**/data/*TreeMixIn_*.yml",
+      "/pkg/**/data/**/*TreeMixIn_*.yml"
+    ],
+    "./stage/schema/TreeMixin.schema.json": [
+      "/pkg/**/data/*TreeMixin_*.yml",
+      "/pkg/**/data/**/*TreeMixin_*.yml"
+    ],
+    "./stage/schema/UploadedFile.schema.json": [
+      "/pkg/**/data/*UploadedFile_*.yml",
+      "/pkg/**/data/**/*UploadedFile_*.yml"
+    ],
+    "./stage/schema/UploadedFilePublic.schema.json": [
+      "/pkg/**/data/*UploadedFilePublic_*.yml",
+      "/pkg/**/data/**/*UploadedFilePublic_*.yml"
+    ],
+    "./stage/schema/User.schema.json": [
+      "/pkg/**/data/*User_*.yml",
+      "/pkg/**/data/**/*User_*.yml"
+    ],
+    "./stage/schema/UserLog.schema.json": [
+      "/pkg/**/data/*UserLog_*.yml",
+      "/pkg/**/data/**/*UserLog_*.yml"
+    ],
+    "./stage/schema/UserOwnerMixIn.schema.json": [
+      "/pkg/**/data/*UserOwnerMixIn_*.yml",
+      "/pkg/**/data/**/*UserOwnerMixIn_*.yml"
+    ],
+    "./stage/schema/UserVerifyCode.schema.json": [
+      "/pkg/**/data/*UserVerifyCode_*.yml",
+      "/pkg/**/data/**/*UserVerifyCode_*.yml"
+    ],
+    "./stage/schema/WebsitePageConfig.schema.json": [
+      "/pkg/**/data/*WebsitePageConfig_*.yml",
+      "/pkg/**/data/**/*WebsitePageConfig_*.yml"
+    ]
+  }
+}

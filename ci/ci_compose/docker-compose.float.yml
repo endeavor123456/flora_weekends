@@ -1,0 +1,16 @@
+version: "3"
+services:
+  float:
+    image: ma.applysquare.net:4567/eng/docker/float:0
+    network_mode: host
+    restart: on_failure
+    volumes:
+      - ${FLOAT_SRC}/output/pdf:/float/output/pdf
+      - ${FLOAT_SRC}/configs:/float/configs
+    environment:
+      MY_UID: ${MY_UID}
+      MY_GID: ${MY_GID}
+      CI_JOB_URL: ${CI_JOB_URL}
+      FLOAT_TARGET: ${FLOAT_TARGET}
+      FLOAT_SESSION_PASSWORD: ${FLOAT_SESSION_PASSWORD}
+  

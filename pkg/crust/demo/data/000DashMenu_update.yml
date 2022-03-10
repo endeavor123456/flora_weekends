@@ -1,0 +1,37 @@
+---
+ID: app_demo_country_manage
+Name: 国别管理系统
+ParentExternalID: appgroup_1
+Level: app
+Link: /dashboard/list/DemoCountry?_page=page_demo_country_manage
+---
+ID: page_group_demo_country_manage
+Name: 国别管理
+ParentExternalID: app_demo_country_manage
+Level: page_group
+---
+ID: page_demo_country_manage
+Name: 国家列表
+ParentExternalID: page_group_demo_country_manage
+Level: page
+Link: /dashboard/list/DemoCountry
+---
+
+---
+ID: app_demo_person_manage
+Name: 人员管理系统
+ParentExternalID: appgroup_1
+Level: app
+Link: /dashboard/list/DemoPerson?_page=page_demo_person_manage
+---
+ID: page_group_demo_person_manage
+Name: 人员管理
+ParentExternalID: app_demo_person_manage
+Level: page_group
+---
+ID: page_demo_person_manage
+Name: 人员列表
+ParentExternalID: page_group_demo_person_manage
+Level: page
+Link: /dashboard/list/DemoPerson
+---
