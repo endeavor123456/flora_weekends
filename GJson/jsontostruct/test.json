@@ -1,0 +1,59 @@
+{
+    "job": {
+      "setting": {
+        "speed": {
+          "byte": 1048576
+        },
+        "errorLimit": {
+          "record": 0,
+          "percentage": 0.02
+        }
+      },
+      "content": [
+        {
+          "reader": {
+            "name": "postgresqlreader",
+            "parameter": {
+              "username": "postgres",
+              "password": "postgres",
+              "column": [
+                "*"
+              ],
+              "splitPk": "id",
+              "connection": [
+                {
+                  "jdbcUrl": [
+                    "jdbc:postgresql://127.0.0.1:5432/flora-study"
+                  ],
+                  "table": [
+                    "dash_menu"
+                  ]
+                }
+              ]
+            }
+          },
+          "writer": {
+            "name": "postgresqlwriter",
+            "parameter": {
+              "username": "postgres",
+              "password": "postgres",
+              "column": [
+                "*"
+              ],
+              "splitPk": "id",
+              "connection": [
+                {
+                  "jdbcUrl": [
+                    "jdbc:postgresql://127.0.0.1:5432/jackal"
+                  ],
+                  "table": [
+                    "dash_menu"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
